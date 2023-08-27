@@ -1,21 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Operations API</title>
 </head>
-<body   
-style=" margin: auto;
-padding: 10px;">
+
+<body style="padding: 0 1em;
+margin: 50px;">
     <h1>URL based math operations!</h1>
-    <h2>Index:</h2>
-    <ul>
-        <!-- All the endpoint url from the main python file is being pushed here via flask -->
-        {% for endpoint in endpoint_samples %}
-            <li><a href="{{ endpoint.url }}">{{ endpoint.description }}</a></li>
-        {% endfor %}
-    </ul>
-    <h3>You can do you own operations as well by changing the URL with "/operand/operator/operand" </h3>
+    <h2>History :</h2>
+    <h3><li>You can view upto 20 recent operations in the /history command</li></h3>
+    <div style="border: none; background: none;
+        font-size: base-font-size * 0.875;
+        line-height: 1em;
+        letter-spacing: normal;
+        word-break: break-all;">
+        <pre style="background-color: #1f1f1d;
+        border-radius: 15px;">
+        <code style = "font-family: Monaco, monospace;font-size: base-font-size;
+        line-height: 100%;
+        padding: 0.2em;
+        letter-spacing: -0.05em;color: rgb(31, 197, 212);">
+        URL : http://localhost:3000/history          
+        </code></pre>
+    </div>
+    <h2>Mathematical Operations such as :</h2>
+    <h3><li>Addition</li></h3>
+    <div style="border: none; background: none;
+        font-size: base-font-size * 0.875;
+        line-height: 1em;
+        letter-spacing: normal;
+        word-break: break-all;">
+        <pre style="background-color: #1f1f1d;
+        border-radius: 15px;">
+        <code style = "font-family: Monaco, monospace;font-size: base-font-size;
+        line-height: 100%;
+        padding: 0.2em;
+        letter-spacing: -0.05em;color: rgb(31, 197, 212);">
+        Syntax : http://localhost:3000/operand1/plus/operand2
+
+        Example :http://localhost:3000/5/plus/3
+        </code></pre>
+    </div>
+    <h3><li>Subtraction</li></h3>
+    <div style="border: none; background: none;
+        font-size: base-font-size * 0.875;
+        line-height: 1em;
+        letter-spacing: normal;
+        word-break: break-all;">
+        <pre style="background-color: #1f1f1d;
+        border-radius: 15px;">
+        <code style = "font-family: Monaco, monospace;font-size: base-font-size;
+        line-height: 100%;
+        padding: 0.2em;
+        letter-spacing: -0.05em;color: rgb(31, 197, 212);">
+        Syntax : http://localhost:3000/operand1/minus/operand2
+
+        Example : http://localhost:3000/5/minus/3
+        </code></pre>
+    </div>
+    <h3><li>Multiplication</li></h3>
+    <div style="border: none; background: none;
+        font-size: base-font-size * 0.875;
+        line-height: 1em;
+        letter-spacing: normal;
+        word-break: break-all;">
+        <pre style="background-color: #1f1f1d;
+        border-radius: 15px;">
+        <code style = "font-family: Monaco, monospace;font-size: base-font-size;
+        line-height: 100%;
+        padding: 0.2em;
+        letter-spacing: -0.05em;color: rgb(31, 197, 212);">
+        Syntax : http://localhost:3000/operand1/into/operand2
+
+        Example : http://localhost:3000/5/into/3
+        </code></pre>
+    </div>
 </body>
+
 </html>
