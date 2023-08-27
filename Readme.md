@@ -13,5 +13,6 @@ This is a simple Python-based server that responds to mathematical operations se
 - pip install requirements.txt
 
 ## Run the server
-
+<pre><code>
 python app.py
+</code></pre>
