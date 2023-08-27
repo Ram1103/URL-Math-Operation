@@ -10,9 +10,13 @@ This is a simple Python-based server that responds to mathematical operations se
 
 ## Prerequisites
 
-- pip install requirements.txt
+- python3.x
+- flask
+- collections
+- json
+
+## Run this for installing packages!
+<pre><code>pip install requirements.txt</code></pre>
 
 ## Run the server
-<pre><code>
-python app.py
-</code></pre>
+<pre><code>python app.py</code></pre>
