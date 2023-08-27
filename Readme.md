@@ -22,11 +22,14 @@ This is a simple Python-based server that responds to mathematical operations se
 <pre><code>python main-server.py</code></pre>
 
 ## Screenshots
-- Homepage
+- Homepage :
+
 ![Alt text](image.png)
 
-- /history
+- History :
+
 ![Alt text](image-1.png)
 
-- /math operation
+- Math operation :
+
 ![Alt text](image-2.png)
