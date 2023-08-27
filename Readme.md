@@ -19,4 +19,4 @@ This is a simple Python-based server that responds to mathematical operations se
 <pre><code>pip install requirements.txt</code></pre>
 
 ## Run the server
-<pre><code>python app.py</code></pre>
+<pre><code>python main-server.py</code></pre>
