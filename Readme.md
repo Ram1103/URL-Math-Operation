@@ -20,3 +20,6 @@ This is a simple Python-based server that responds to mathematical operations se
 
 ## Run the server
 <pre><code>python main-server.py</code></pre>
+
+## Screenshots
+![Alt text](image.png)
