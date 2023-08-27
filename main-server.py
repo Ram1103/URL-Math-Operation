@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from collections import deque
 import json
 
@@ -26,8 +26,19 @@ def evaluate_expression(expression):
 
 #routing to the home page
 @app.route('/')
-def hello():
-    return "Math Operations using Get calls!"
+def index():
+    #Sends to HTML via flask render template function
+    endpoint_samples = [
+        {'url': '/history', 'description': 'History : Lists the last 20 operations performed on the server'},
+        {'url': '/5/plus/3', 'description': 'Performs addition: 5/plus/3'},
+        {'url': '/3/minus/5', 'description': 'Performs subtraction: 3/minus/5'},
+        {'url': '/3/minus/5/plus/8', 'description': 'Performs chained operations: 3/minus/5/plus/8'},
+        {'url': '/3/into/5/plus/8/into/6', 'description': 'Performs chained operations: 3/into/5/plus/8/into/6'},
+    ]
+    #routes to index.html , inside the templates directory
+    return render_template('index.html', endpoint_samples=endpoint_samples)
+    
+    
 
 #routing history
 @app.route('/history')

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations API</title>
+</head>
+<body   
+style=" margin: auto;
+padding: 10px;">
+    <h1>URL based math operations!</h1>
+    <h2>Index:</h2>
+    <ul>
+        <!-- All the endpoint url from the main python file is being pushed here via flask -->
+        {% for endpoint in endpoint_samples %}
+            <li><a href="{{ endpoint.url }}">{{ endpoint.description }}</a></li>
+        {% endfor %}
+    </ul>
+    <h3>You can do you own operations as well by changing the URL with "/operand/operator/operand" </h3>
+</body>
+</html>
