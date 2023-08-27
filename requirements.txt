@@ -1,0 +1,4 @@
+# These are the required packages to execute the Math App Server
+flask
+collections
+json
